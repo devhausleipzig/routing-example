@@ -1,17 +1,13 @@
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
+
 function App() {
   return (
-    <div>
-      <span>Index</span>
-    </div>
+    <>
+      <Header />
+      <Outlet />
+    </>
   );
 }
 
 export default App;
-// React.createElement(
-//   "div",
-//   {
-//     style: {
-//       backgroundColor: "red",
-//     },
-//   },
-//   React.createElement("span", { style: { color: "green" } }, "Hello")
